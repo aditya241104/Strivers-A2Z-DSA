@@ -1,0 +1,20 @@
+Two pointer fast and slow
+fast=fast.next.next;
+slow=slow.next; 
+
+1. Cycle Detection ✅
+   - Use two pointers: slow and fast
+   - fast = fast.next.next
+   - slow = slow.next
+   - If they meet → cycle exists
+
+2. Starting Point of Cycle ✅
+   - After cycle is detected:
+     - slow = head
+     - Keep fast where it is
+     - Move both one step at a time
+     - When they meet again → start of cycle
+
+3. Middle of Linked List ✅
+   - Move fast by 2 and slow by 1
+   - When fast == null (or fast.next == null) → slow is at middle
