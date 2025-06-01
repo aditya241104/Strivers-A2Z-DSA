@@ -16,9 +16,7 @@ public class MergeSortLL {
             return head;
         }
         ListNode ptr=head;
-        int count=0;
         while(ptr.next!=null){
-            count++;
             ptr=ptr.next;
 
         }
